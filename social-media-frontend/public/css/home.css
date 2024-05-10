@@ -1,0 +1,78 @@
+.search-result {
+    width: 30%;
+    margin-left: 40px;
+  
+  }
+  .home-page {
+    width: 100%; /* Ensure the component takes up the full width */
+    height: 100vh; /* Ensure the component takes up the full height */
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  }
+  .header {
+    background-color: #007bff;
+    padding: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .posts {
+    display: flex;
+    flex-wrap: wrap; /* Allow posts to wrap to the next line */
+    gap: 20px;
+    justify-content: space-between; /* Distribute posts evenly */
+  }
+  
+  .post {
+    width: calc(33.33% - 20px); /* Adjust width to fit three posts in one line */
+  }
+  
+  .card {
+    width: 100%; /* Ensure cards take up full width */
+  }
+  
+  .no-posts {
+    text-align: center;
+    color: #999;
+  }
+  
+  .main-container {
+    height: 100%; /* Ensure the main container takes up the full height of the viewport */
+    width: 100%; /* Ensure the main container takes up the full width of the viewport */
+  }
+  
+  .search {
+    padding: 20px 0;
+  }
+  
+  .search input[type="text"] {
+    margin-left: 240px;
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  .new-post-form {
+    margin-top: 20px;
+    height : 300px;
+    width: 50%;  
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
