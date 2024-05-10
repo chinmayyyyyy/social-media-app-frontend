@@ -7,7 +7,8 @@
     width: 100%; /* Ensure the component takes up the full width */
     height: 100vh; /* Ensure the component takes up the full height */
     background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png") ;
+    background-repeat: repeat ; 
   }
   .header {
     background-color: #007bff;
@@ -32,6 +33,7 @@
   
   .posts {
     display: flex;
+    height: 100%;
     flex-wrap: wrap; /* Allow posts to wrap to the next line */
     gap: 20px;
     justify-content: space-between; /* Distribute posts evenly */
@@ -75,4 +77,7 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+  .unfollow-btn {
+    font-size: 2px; /* Adjust the font size as desired */
+    padding: 0.0 0.5rem !important; /* Adjust padding to make the button smaller */
+  }
