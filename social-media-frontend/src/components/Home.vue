@@ -71,7 +71,7 @@ export default {
       this.showSearchUser = !this.showSearchUser;
     },
     fetchPosts() {
-      fetch(`https://social-media-backend-gmki.onrender.com/posts/followed/${this.userId}`)
+      fetch(`http://localhost:3000/posts/followed/${this.userId}`)
         .then((response) => {
           if (response.ok) {
             return response.json();
@@ -90,7 +90,7 @@ export default {
       this.fetchPosts(); // Call fetchPosts when a user is successfully followed
     },
     unfollowUser(followingId) {
-      fetch(`https://social-media-backend-gmki.onrender.com/follow/${this.userId}/${followingId}`, {
+      fetch(`http://localhost:3000/follow/${this.userId}/${followingId}`, {
         method: "DELETE",
       })
         .then((response) => {
@@ -129,4 +129,5 @@ export default {
 };
 </script>
 
-<style src = 'public\css\home.css'></style>
+<style src="../assets/home.css"></style>
+

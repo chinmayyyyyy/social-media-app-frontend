@@ -32,7 +32,7 @@
     },
     methods: {
       submitNewPost() {
-        fetch("https://social-media-backend-gmki.onrender.com/posts", {
+        fetch("http://localhost:3000/posts", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -71,7 +71,7 @@
   };
   </script>
   
-  <style src = 'public\css\home.css'>
+  <style src = '../assets/home.css'>
   .add-new-post {
     margin-top: 20px; /* Adjust margin as needed */
   }

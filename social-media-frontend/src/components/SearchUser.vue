@@ -30,7 +30,7 @@
     },
     methods: {
       followUser(followingId, button) {
-        fetch(`https://social-media-backend-gmki.onrender.com/follow/${this.userId}/${followingId}`, {
+        fetch(`http://localhost:3000/follow/${this.userId}/${followingId}`, {
           method: "POST"
         })
           .then(response => {
@@ -52,7 +52,7 @@
       },
       searchUsers() {
         if (this.userSearchQuery.trim() !== "") {
-          fetch(`https://social-media-backend-gmki.onrender.com/register/search?query=${this.userSearchQuery}`, {
+          fetch(`http://localhost:3000/register/search?query=${this.userSearchQuery}`, {
             method: "GET",
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -93,7 +93,7 @@
   };
   </script>
   
-  <style src = 'public\css\home.css'>
+  <style src = '../assets/home.css'>
   
 
   </style>
