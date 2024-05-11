@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     login() {
-      fetch('http://localhost:3000/auth/login', {
+      fetch('https://social-media-backend-gmki.onrender.com/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

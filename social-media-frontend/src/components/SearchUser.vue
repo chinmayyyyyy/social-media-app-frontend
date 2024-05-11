@@ -1,7 +1,7 @@
 <template>
-    <div class=" pt-10 search-user d-flex justify-content-center">
+    <div class=" pt-10z search search-user d-flex justify-content-center">
       <div class="col-md-6 mt-20"> <!-- Adjust the column size as needed -->
-        <input type="text" class="form-control" v-model="userSearchQuery" @input="searchUsers" placeholder="Search users...">
+        <input type="text"  v-model="userSearchQuery" @input="searchUsers" placeholder="Search users...">
       </div>
       <div v-if="showUserSearchResults" class="list-group search-result">
         <h3 class="list-group-item active">User Search Results</h3>
@@ -30,7 +30,7 @@
     },
     methods: {
       followUser(followingId, button) {
-        fetch(`http://localhost:3000/follow/${this.userId}/${followingId}`, {
+        fetch(`https://social-media-backend-gmki.onrender.com/follow/${this.userId}/${followingId}`, {
           method: "POST"
         })
           .then(response => {
@@ -52,7 +52,7 @@
       },
       searchUsers() {
         if (this.userSearchQuery.trim() !== "") {
-          fetch(`http://localhost:3000/register/search?query=${this.userSearchQuery}`, {
+          fetch(`https://social-media-backend-gmki.onrender.com/register/search?query=${this.userSearchQuery}`, {
             method: "GET",
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`

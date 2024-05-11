@@ -29,7 +29,7 @@ export default {
   methods: {
     signup() {
       // Send signup data to backend
-      fetch('http://localhost:3000/register', {
+      fetch('https://social-media-backend-gmki.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
